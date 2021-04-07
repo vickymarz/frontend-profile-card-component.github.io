@@ -1,1 +1,113 @@
+@font-face {
+  font-family: "Kumbh-Regular";
+  src: url(../Kumbh_Sans/KumbhSans-Regular.ttf);
+}
+@font-face {
+  font-family: "Kumbh-Bold";
+  src: url(../Kumbh_Sans/KumbhSans-Bold.ttf);
+}
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
+html {
+  font-size: 18px;
+  font-family: "Kumbh+Sans", sans-serif;
+}
+
+body {
+  background-image: url(../images/bg-pattern-top.svg), url(../images/bg-pattern-bottom.svg);
+  background-repeat: no-repeat no-repeat;
+  background-position: top -30rem left -35rem, bottom -35rem right -35rem;
+  background-size: auto;
+  object-fit: cover;
+  background-color: #19a2ae;
+  width: 100%;
+  height: 100vh;
+}
+
+.container {
+  width: 90%;
+  max-width: 375px;
+  margin: 10rem auto;
+  background: url(../images/bg-pattern-card.svg) no-repeat;
+  background-color: white;
+  border-radius: 1rem;
+  box-shadow: 0 0 10px 10px #19a2ae;
+}
+
+img {
+  width: 100%;
+  max-width: 100%;
+  height: 180px;
+  border-radius: 1rem 1rem 0 0;
+}
+
+.avatar__container .avatar .avatar__victor {
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  display: flex;
+  position: relative;
+  top: -50px;
+}
+.avatar__container .avatar .avatar__victor .victor {
+  width: 100px;
+  height: 100px;
+  border-radius: 3rem;
+  border: 5px solid white;
+}
+.avatar__container .avatar .avatar__bio {
+  text-align: center;
+  margin-top: -25px;
+}
+.avatar__container .avatar .avatar__bio .name {
+  color: black;
+  font-weight: 700;
+  font-family: Kumbh-Bold;
+  text-align: center;
+}
+.avatar__container .avatar .avatar__bio .age {
+  color: #969696;
+  font-weight: 400;
+  font-family: Kumbh-Regular;
+}
+.avatar__container .avatar .avatar__bio p {
+  color: #969696;
+  font-weight: 400;
+  font-family: Kumbh-Regular;
+  padding: 1rem;
+  padding-bottom: 2rem;
+}
+
+.avatar-details {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  text-align: center;
+  padding: 1.5rem;
+}
+.avatar-details .box {
+  flex: 100%;
+}
+.avatar-details .box h2 {
+  color: black;
+  font-weight: 700;
+  font-family: Kumbh-Bold;
+  font-size: 0.9em;
+  padding-bottom: 10px;
+}
+.avatar-details .box p {
+  color: #969696;
+  font-weight: 400;
+  font-family: Kumbh-Regular;
+  font-size: 0.8em;
+  letter-spacing: 2px;
+}
+
+/*# sourceMappingURL=style.css.map */
