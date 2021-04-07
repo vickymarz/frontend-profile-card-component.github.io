@@ -1,0 +1,126 @@
+@font-face {
+	font-family: 'Kumbh-Regular';
+	src: url(../Kumbh_Sans/KumbhSans-Regular.ttf);
+}
+@font-face {
+	font-family: 'Kumbh-Bold';
+	src: url(../Kumbh_Sans/KumbhSans-Bold.ttf);
+}
+// Variables
+// Primary colors
+$Dark-cyan: hsl(185, 75%, 39%);
+$Very-dark-desaturated-blue: hsl(229, 23%, 23%);
+$Dark-grayish-blue: hsl(227, 10%, 46%);
+
+// Neutral
+$Dark-gray: hsl(0, 0%, 59%);
+
+$fontsize: 18px;
+$font-family: 'Kumbh+Sans', sans-serif;
+$weight-regular: 400;
+$weight-bold: 700;
+
+// RESET
+*,
+*::before,
+*::after {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+html {
+	font-size: $fontsize;
+	font-family: $font-family;
+}
+body {
+	background-image: url(../images/bg-pattern-top.svg),
+		url(../images/bg-pattern-bottom.svg);
+	background-repeat: no-repeat no-repeat;
+	background-position: top -30rem left -35rem, bottom -35rem right -35rem;
+	background-size: auto;
+	object-fit: cover;
+	background-color: $Dark-cyan;
+	width: 100%;
+	height: 100vh;
+}
+.container {
+	width: 90%;
+	max-width: 375px;
+	margin: 10rem auto;
+	background: url(../images/bg-pattern-card.svg) no-repeat;
+	background-color: white;
+	border-radius: 1rem;
+	box-shadow: 0 0 10px 10px $Dark-cyan;
+}
+img {
+	width: 100%;
+	max-width: 100%;
+	height: 180px;
+	border-radius: 1rem 1rem 0 0;
+}
+.avatar__container {
+	.avatar {
+		.avatar__victor {
+			justify-content: center;
+			align-items: center;
+			flex-direction: row;
+			display: flex;
+			position: relative;
+			top: -50px;
+			.victor {
+				width: 100px;
+				height: 100px;
+				border-radius: 3rem;
+				border: 5px solid white;
+				// transform: translate(130px, -50px);
+			}
+		}
+		.avatar__bio {
+			text-align: center;
+			margin-top: -25px;
+			.name {
+				color: black;
+				font-weight: $weight-bold;
+				font-family: Kumbh-Bold;
+				text-align: center;
+			}
+			.age {
+				color: $Dark-gray;
+				font-weight: $weight-regular;
+				font-family: Kumbh-Regular;
+			}
+			p {
+				color: $Dark-gray;
+				font-weight: $weight-regular;
+				font-family: Kumbh-Regular;
+				padding: 1rem;
+				padding-bottom: 2rem;
+			}
+		}
+	}
+}
+.avatar-details {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	align-items: center;
+	text-align: center;
+	padding: 1.5rem;
+	.box {
+		flex: 100%;
+		h2 {
+			color: black;
+			font-weight: $weight-bold;
+			font-family: Kumbh-Bold;
+			font-size:0.9em;
+			padding-bottom: 10px;
+		}
+		p {
+			color: $Dark-gray;
+			font-weight: $weight-regular;
+			font-family: Kumbh-Regular;
+			font-size: 0.8em;
+			letter-spacing: 2px;
+		}
+	}
+}
