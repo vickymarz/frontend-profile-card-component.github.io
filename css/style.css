@@ -1,11 +1,3 @@
-@font-face {
-  font-family: "Kumbh-Regular";
-  src: url(../Kumbh_Sans/KumbhSans-Regular.ttf);
-}
-@font-face {
-  font-family: "Kumbh-Bold";
-  src: url(../Kumbh_Sans/KumbhSans-Bold.ttf);
-}
 *,
 *::before,
 *::after {
@@ -16,7 +8,7 @@
 
 html {
   font-size: 18px;
-  font-family: "Kumbh+Sans", sans-serif;
+  font-family: 'Kumbh+Sans', sans-serif;
 }
 
 body {
@@ -27,7 +19,8 @@ body {
   object-fit: cover;
   background-color: #19a2ae;
   width: 100%;
-  height: 100vh;
+  min-height: 100vh;
+  height: auto;
 }
 
 .container {
@@ -68,18 +61,15 @@ img {
 .avatar__container .avatar .avatar__bio .name {
   color: black;
   font-weight: 700;
-  font-family: Kumbh-Bold;
   text-align: center;
 }
 .avatar__container .avatar .avatar__bio .age {
   color: #969696;
   font-weight: 400;
-  font-family: Kumbh-Regular;
 }
 .avatar__container .avatar .avatar__bio p {
   color: #969696;
   font-weight: 400;
-  font-family: Kumbh-Regular;
   padding: 1rem;
   padding-bottom: 2rem;
 }
@@ -98,14 +88,12 @@ img {
 .avatar-details .box h2 {
   color: black;
   font-weight: 700;
-  font-family: Kumbh-Bold;
   font-size: 0.9em;
   padding-bottom: 10px;
 }
 .avatar-details .box p {
   color: #969696;
   font-weight: 400;
-  font-family: Kumbh-Regular;
   font-size: 0.8em;
   letter-spacing: 2px;
 }
