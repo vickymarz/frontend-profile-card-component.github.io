@@ -33,7 +33,7 @@ body {
 .container {
   width: 90%;
   max-width: 375px;
-  margin: 10rem auto;
+  margin: 5rem auto;
   background: url(../images/bg-pattern-card.svg) no-repeat;
   background-color: white;
   border-radius: 1rem;
